@@ -1,155 +1,58 @@
-.home {
+.navbar {
+    background-color: #001842;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
     display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    height: 70vh;
-    position: relative;
-}
-
-.home:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    background: linear-gradient(45deg, #f9d423, #ff4e50);
-    animation: slideBackground 10s infinite linear;
-}
-
-@keyframes slideBackground {
-    0% {
-        background-position: 0% 0%;
-    }
-    50% {
-        background-position: 100% 0%;
-    }
-    100% {
-        background-position: 0% 0%;
-    }
-}
-
-.home img {
-    border-radius: 90%;
-    margin-right: 70px;
-    box-shadow: 0 0 90px rgb(16, 43, 183);
-    animation: rotate 3s infinite linear;
-}
-
-.heading {
-    font-size: 2rem;
-}
-
-.home_left {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Adjust alignment */
-    width: 65%;
-    padding-top: 5rem;
-}
-
-.home_left p {
-    margin-top: 1.5rem;
-    width: 90%;
-    color: hsl(50, 16%, 93%);
-    font-size: 1.1em;
-}
-
-.home_left h2 {
-    letter-spacing: 1px;
-    text-align: start;
-    width: 80%;
-    color: #f5f1ea;
-}
-
-.home_right {
-    display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: flex-end; /* Adjust alignment */
-    width: 100%; /* Adjust width */
-    padding-top: 5rem;
+    margin-bottom: 1rem;
+    padding: 2rem 10px;
 }
 
-.row_1 {
-    margin-top: 2rem;
+.logoSection {
     display: flex;
-    flex-direction: column;
+    margin-right: auto;
 }
 
-.row_2 {
-    margin-top: -2rem;
-    display: flex;
-    flex-direction: column;
+.logoSection h1 {
+    align-self: center;
+}
+
+.navbar a {
+    margin: 0 12.5px;
 }
 
 .btn {
-    margin-top: 1.5rem;
-    margin-right: 1rem;
-    padding: 1rem 2rem;
-    border-radius: 10px;
-    font-size: 20px;
-    background-color: rgb(18, 34, 204);
+    background: rgb(46, 89, 182);
+    color: #f2f2f2;
     border: none;
-    color: #fff;
-    position: relative;
-    overflow: hidden;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
+    border-radius: 5px;
+    padding: 6px 0.5rem;
     cursor: pointer;
-    background-color: rgb(48, 64, 237);
-    color: hsl(0, 0%, 100%);
 }
 
-.btn:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    background: rgba(255, 255, 255, 0.3);
-    transform: scale(0);
-    transition: transform 0.3s ease;
-}
-
-.btn:hover:before {
-    transform: scale(1);
-}
-
-@media screen and (max-width: 600px) {
-    .home {
-        padding: 1rem;
-    }
-
-    .home_left {
-        align-items: center; /* Adjust alignment */
-        width: 100%;
-        padding-top: 1rem;
-    }
-
-    .home_left p {
-        margin-top: 1.5rem;
-        width: 85%;
-    }
-
-    .home_left h2 {
-        letter-spacing: 2px;
-        text-align: center; /* Adjust alignment */
-        width: 100%;
-        font-size: 1.8rem;
-    }
-
-    .home_right {
-        padding-top: 2rem; /* Adjust padding */
-        margin-bottom: 2rem; /* Adjust margin */
+@media screen and (max-width:600px) {
+    .btn_container {
+        display: flex;
         justify-content: center;
+        align-items: center;
     }
 
-    .btn {
-        margin-top: 2rem;
+    .logoSection {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-right: auto;
+    }
+
+    .logoSection h1 {
+        font-size: 0.95rem;
+    }
+
+    .logoSection img {
+        height: 30px;
+    }
+
+    .navbar a {
+        margin-top: 1rem;
     }
 }
