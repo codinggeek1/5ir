@@ -86,7 +86,7 @@ const Navbar = () => {
     return (
         <div className={styles.navbar}>
             <div className={styles.logoSection}>
-                <h1>5ire X USDC</h1>
+                <h1>5ireRaise</h1>
             </div>
             <div className={active}>
                 <Link href='/'>Home</Link>
