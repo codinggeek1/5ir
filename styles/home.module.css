@@ -1,11 +1,8 @@
 .home {
     display: flex;
-    padding: 2rem 2rem;
+    padding: 2rem;
     height: 70vh;
-    background-image: url('your-background-image.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: linear-gradient(45deg, #f9d423, #ff4e50);
     animation: slideBackground 10s infinite linear;
 }
 
@@ -49,7 +46,6 @@
 .home_left p {
     margin-top: 1.5rem;
     width: 90%;
-    width: 75%;
     color: hsl(50, 16%, 93%);
     font-size: 1.1em;
 }
@@ -64,7 +60,6 @@
 .home_right {
     display: flex;
     flex: 1;
-    /* justify-content: center; */
     align-items: center;
 }
 
@@ -98,10 +93,9 @@
 }
 
 @media screen and (max-width: 600px) {
-
     .home {
         flex-direction: column;
-        padding: 1rem 4rem;
+        padding: 1rem;
     }
 
     .home_left {
@@ -133,5 +127,4 @@
     .btn {
         margin-top: 2rem;
     }
-
 }
