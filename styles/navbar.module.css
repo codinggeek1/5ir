@@ -1,5 +1,5 @@
 .navbar {
-    background-color: #001842;
+    background: linear-gradient(to right, #001842, #0c2d5e);
     background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
     display: flex;
     justify-content: center;
@@ -19,6 +19,7 @@
 
 .navbar a {
     margin: 0 12.5px;
+    color: #f2f2f2; /* Update link color */
 }
 
 .btn {
@@ -30,7 +31,7 @@
     cursor: pointer;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
     .btn_container {
         display: flex;
         justify-content: center;
