@@ -4,24 +4,21 @@
     height: 70vh;
 }
 
-@keyframes bouge {
+@keyframes rotate {
     0% {
-      transform: translate3d(0, 0, 0);
-    }
-    50% {
-      transform: translate3d(0, 15px, 0);
+        transform: rotate(0);
     }
     100% {
-      transform: translate3d(0, 0, 0);
+        transform: rotate(360deg);
     }
-  }
-  
-  .home img {
+}
+
+.home img {
     border-radius: 90%;
     margin-right: 70px;
     box-shadow: 0 0 90px rgb(16, 43, 183);
-    animation: bouge 3s infinite ease-in-out;
-  }
+    animation: rotate 3s infinite linear;
+}
   
   
   
