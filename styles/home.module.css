@@ -18,20 +18,10 @@
     }
 }
 
-@keyframes rotate {
-    0% {
-        transform: rotate(0);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
 .home img {
     border-radius: 90%;
     margin-right: 70px;
     box-shadow: 0 0 90px rgb(16, 43, 183);
-    animation: rotate 3s infinite linear;
 }
 
 .heading {
