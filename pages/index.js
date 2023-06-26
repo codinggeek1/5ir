@@ -10,7 +10,7 @@ function Home() {
     <div className={styles.home}>
       <div className={styles.home_left}>
         <h2 style={{ fontSize: "4em" }} className={styles.heading}>
-          The Campaign Protocol of Web3
+          The new crowdfunding solution of web3
         </h2>
         <p>Create campaigns for your favorite causes, spread awareness, or tell your story with ease campaigning on our platform</p>
         <Link href="/campaigns">
