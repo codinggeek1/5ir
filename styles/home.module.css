@@ -1,7 +1,24 @@
-.home{
+.home {
     display: flex;
     padding: 2rem 2rem;
     height: 70vh;
+    background-image: url('your-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: slideBackground 10s infinite linear;
+}
+
+@keyframes slideBackground {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
 }
 
 @keyframes rotate {
@@ -19,20 +36,17 @@
     box-shadow: 0 0 90px rgb(16, 43, 183);
     animation: rotate 3s infinite linear;
 }
-  
-  
-  
 
-.heading{
+.heading {
     font-size: 2rem;
 }
 
-.home_left{
+.home_left {
     width: 65%;
     padding-top: 5rem;
 }
 
-.home_left p{
+.home_left p {
     margin-top: 1.5rem;
     width: 90%;
     width: 75%;
@@ -40,33 +54,33 @@
     font-size: 1.1em;
 }
 
-.home_left h2{
+.home_left h2 {
     letter-spacing: 1px;
     text-align: start;
     width: 80%;
-    color: #f5f1ea	;    
+    color: #f5f1ea;
 }
 
-
-.home_right{
+.home_right {
     display: flex;
     flex: 1;
     /* justify-content: center; */
     align-items: center;
 }
-.row_1{
+
+.row_1 {
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
 }
 
-.row_2{
+.row_2 {
     margin-top: -2rem;
     display: flex;
     flex-direction: column;
 }
 
-.btn{
+.btn {
     margin-top: 1.5rem;
     margin-right: 1rem;
     padding: 1rem 2rem;
@@ -77,56 +91,47 @@
     color: #fff;
 }
 
-.btn:hover{
+.btn:hover {
     cursor: pointer;
     background-color: rgb(48, 64, 237);
     color: hsl(0, 0%, 100%);
 }
 
-
-
-
-
-
-
 @media screen and (max-width: 600px) {
 
-    .home{
-       flex-direction: column;
-       padding: 1rem 4rem;
+    .home {
+        flex-direction: column;
+        padding: 1rem 4rem;
     }
 
-    .home_left{
+    .home_left {
         display: flex;
         flex-direction: column;
         width: 100%;
         padding-top: 1rem;
-     
     }
 
-    .home_left p{
+    .home_left p {
         margin-top: 1.5rem;
         width: 85%;
     }
 
-    .home_left h2{
+    .home_left h2 {
         letter-spacing: 2px;
         text-align: start;
         width: 100%;
-        font-size: 1.8rem;   
+        font-size: 1.8rem;
     }
-    
-    .home_right{
+
+    .home_right {
         width: 100%;
         padding-top: 5rem;
         margin-bottom: 5rem;
         justify-content: center;
-    }    
+    }
 
-    .btn{
+    .btn {
         margin-top: 2rem;
-        
-
     }
 
 }
