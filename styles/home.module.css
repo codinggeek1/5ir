@@ -22,6 +22,19 @@
     border-radius: 90%;
     margin-right: 70px;
     box-shadow: 0 0 90px rgb(16, 43, 183);
+    animation: zoomInOut 4s infinite alternate;
+}
+
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 .heading {
